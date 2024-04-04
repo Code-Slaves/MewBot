@@ -1,16 +1,5 @@
-import os
-from dotenv import load_dotenv
-
-
-def build_dotenv() -> None:
-	dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
-	if not os.path.exists(dotenv_path):
-		raise FileNotFoundError("File '.env' not exists in config_ derectory!")
-
-	load_dotenv(dotenv_path)
-
 class Configuration:
 	build_dotenv()
-	TOKEN = os.environ.get('TOKEN')
-	TOKEN_CONTRACT = os.environ.get('TOKEN_CONTRACT')
-	ANIMATION_PATH = os.environ.get('ANIMATION_PATH')
+	TOKEN = "7191354663:AAH067pY8k24axknQNSTpyhxu2A3ZfEwZ_k"
+	TOKEN_CONTRACT = "KT1Hc6KSHp3pLLiCXUkuHva62PRJQ8JmyAcP"
+	ANIMATION_PATH = "https://iroh22zbyhnsd6p4n2xjoh3h3jokn3crsl6tf2poovear4ukkwaa.arweave.net/RFx9ayHB2yH5_G6ulx9n2lym7FGS_TLp7nVICPKKVYA"
